@@ -279,7 +279,7 @@ export default function Page() {
   const generateText = () => {
     const customerText = customer || "verksamheter med höga krav på förändringsledning och styrning";
     const challengeText = challenge || "komplexa beslut, beroenden och höga förväntningar på affärsnytta";
-    const industryText = industryContext[industry];
+    const industryText = industryContext[industry as keyof typeof industryContext];
     const focusText = isBusinessImprovement ? selectedSubtopic.focus : categoryFocus[category];
     const ctaText = ctaOptions[cta];
     const extraBusinessText = isBusinessImprovement
