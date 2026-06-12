@@ -174,7 +174,17 @@ function slugify(text: string) {
 }
 
 
-function TextBlock({ title, text, onCopy }) {
+
+function TextBlock({
+  title,
+  text,
+  onCopy,
+}: {
+  title: string;
+  text: string;
+  onCopy: (text: string) => void;
+}) {
+
   if (!text) return null;
 
 
@@ -189,7 +199,7 @@ function TextBlock({ title, text, onCopy }) {
         </div>
       </CardHeader>
       <CardContent>
-        <pre className="whitespace-pre-wrap text-sm leading-7 text-slate-800 font-sans">{text}</pre>
+        <pre className="whitespace-pre-wrap text-sm leading-7 tex t-slate-800 font-sans">{text}</pre>
       </CardContent>
     </Card>
   );
