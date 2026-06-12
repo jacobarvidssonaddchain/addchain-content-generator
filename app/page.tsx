@@ -160,7 +160,7 @@ const presets = [
 ];
 
 
-function slugify(text) {
+function slugify(text: string)
   return text
     .toLowerCase()
     .normalize("NFD")
