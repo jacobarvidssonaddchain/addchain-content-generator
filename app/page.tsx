@@ -373,7 +373,7 @@ ${linkedInHashtags}`;
     setKeywords(keywordList);
   };
 
-  const copyToClipboard = async (text) => {
+  const copyToClipboard = async (text: string) => {
     await navigator.clipboard.writeText(text);
     setCopyMessage("Kopierat!");
     setTimeout(() => setCopyMessage(""), 1800);
