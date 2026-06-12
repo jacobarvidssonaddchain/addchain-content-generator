@@ -283,7 +283,7 @@ export default function Page() {
 const focusText = isBusinessImprovement
   ? selectedSubtopic.focus
   : categoryFocus[category as keyof typeof categoryFocus];
-    const ctaText = ctaOptions[cta];
+    const ctaText = ctaOptions[cta as keyof typeof ctaOptions];
     const extraBusinessText = isBusinessImprovement
       ? ` I detta område handlar det ofta om att ${selectedSubtopic.angle}.`
       : "";
