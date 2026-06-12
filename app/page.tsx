@@ -416,7 +416,7 @@ ${linkedin}`;
       localStorage.removeItem(STORAGE_KEY);
     }
   };
-  const applyPreset = (preset) => {
+  const applyPreset = (preset: any) => {
     setCategory(preset.category);
     setSubtopic(preset.subtopic);
     setIndustry(preset.industry);
