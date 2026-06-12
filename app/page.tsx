@@ -226,7 +226,7 @@ export default function Page() {
   const [copyMessage, setCopyMessage] = useState("");
   const selectedTone = toneMap[tone as keyof typeof toneMap];
   const isBusinessImprovement = category === "Business Improvement (AI)";
-  const selectedSubtopic = businessImprovementSubtopics[subtopic];
+  const selectedSubtopic = businessImprovementSubtopics[subtopic as keyof typeof businessImprovementSubtopics];
 
 
   useEffect(() => {
