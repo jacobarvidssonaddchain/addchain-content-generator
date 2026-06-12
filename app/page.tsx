@@ -272,7 +272,7 @@ export default function Page() {
     if (isBusinessImprovement) {
       return `${titles[category]} ${selectedSubtopic.titleAddon}`;
     }
-    return titles[category];
+    return titles[category as keyof typeof titles];
   }, [category, isBusinessImprovement, selectedSubtopic]);
 
 
