@@ -262,7 +262,7 @@ export default function Page() {
 
   useEffect(() => {
     if (!isBusinessImprovement) return;
-    if (!businessImprovementSubtopics[subtopic]) {
+    if (!businessImprovementSubtopics[subtopic as keyof typeof businessImprovementSubtopics]) {
       setSubtopic("AI och automatisering");
     }
   }, [isBusinessImprovement, subtopic]);
