@@ -224,7 +224,7 @@ export default function Page() {
   const [slug, setSlug] = useState("");
   const [keywords, setKeywords] = useState("");
   const [copyMessage, setCopyMessage] = useState("");
-  const selectedTone = toneMap[tone];
+  const selectedTone = toneMap[tone as keyof typeof toneMap];
   const isBusinessImprovement = category === "Business Improvement (AI)";
   const selectedSubtopic = businessImprovementSubtopics[subtopic];
 
